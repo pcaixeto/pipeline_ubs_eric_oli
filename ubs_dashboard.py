@@ -9,14 +9,11 @@ df = pd.read_csv("ubs_atualizado.csv", sep=";")
 df_freq = df['Nome_UF'].value_counts().reset_index()
 df_freq.columns = ['Estado', 'Frequência']
 
-# Criar o dashboard
+# Criar o dashboard Atividade 2
 st.title("Dashboard de Unidades Básicas de Saúde (UBS)")
 
 # Gráfico de barras
-grafico = px.bar(df_freq, x='Estado', y='Frequência', 
-                 title='Frequência de UBS por Estado', 
-                 labels={'Estado': 'Estado', 'Frequência': 'Número de UBS'},
-                 text_auto=True)
+grafico = px.pie(df_freq, names='Estado', values='Frequência', title='UBS por Estado')
 
 st.plotly_chart(grafico)
 
@@ -25,5 +22,3 @@ estados = st.multiselect("Selecione os estados", df_freq['Estado'].unique())
 if estados:
     df_filtrado = df[df['Nome_UF'].isin(estados)]
     st.write(df_filtrado)
-
-// comentario teste
