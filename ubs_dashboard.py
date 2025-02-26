@@ -18,6 +18,9 @@ grafico = px.bar(df_freq, x='Estado', y='Frequência',
                  labels={'Estado': 'Estado', 'Frequência': 'Número de UBS'},
                  text_auto=True)
 
+#Exercicio 2: Gráfico de Pizza da Distribuição de UBS por Estado
+grafico = px.pie(df_freq, names='Estado', values='Frequência', title='UBS por Estado')
+
 st.plotly_chart(grafico)
 
 # Filtro para estados específicos
