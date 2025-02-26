@@ -70,13 +70,7 @@ Refatorar e aprimorar o **Dashboard de Unidades Básicas de Saúde (UBS)**, impl
 - Adicionar um controle deslizante (`st.slider()`) para filtrar municípios com um número mínimo de UBS.
 
 ---
-
-## 📦 Entrega
-- A implementação deve ser realizada em um **repositório GitHub do grupo**.
-- O repositório deve conter:
-  - Código-fonte do dashboard (`.py`).
-  - Arquivo de dados atualizado (`.csv`).
-  - Arquivo `README.md` contendo:
-    - Descrições adicionais
-    - **Nome dos integrantes do grupo**.
-    - Dependências do projeto (adicionar no requirements.txt).
+## Alunos
+- Eric Akio Uchiyamada RA: 10395287
+- Oliver Kieran Galvão McCormack RA: 10395672
+- Pedro Machado Gomes Caixeta RA: 10314309
