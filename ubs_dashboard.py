@@ -71,3 +71,6 @@ grafico_barras = px.bar(df_filtrado, x='Município', y='Quantidade_UBS',
                         text_auto=True)
 
 st.plotly_chart(grafico_barras)
+
+# Gerar um novo arquivo CSV com os dados modificados
+df.to_csv("ubs_atualizado_modificado.csv", sep=";", index=False)
